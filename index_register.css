@@ -1,0 +1,195 @@
+body {
+            font-family: 'Inter', sans-serif;
+            background-image: linear-gradient(to bottom, #6ee7b7, #3b82f6); /* Gradient background */
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.1); /* Glassmorphism effect - more transparent*/
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 1.25rem 2rem rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+            backdrop-filter: blur(10px); /* Add blur to the background, stronger blur */
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Add a border */
+            width: 100%;
+            max-width: 400px; /* Increased max-width for larger screens */
+        }
+
+        .heading {
+            font-size: 2.25rem; /* Larger heading */
+            font-weight: 600; /* Use semibold font */
+            color: #ffffff; /* White text */
+            margin-bottom: 1.5rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
+        }
+
+        .input-group {
+            margin-bottom: 1.25rem; /* Increased margin */
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600; /* Use semibold font */
+            color: #ffffff; /* White text */
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow to label */
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 0.75rem; /* Increased padding */
+            font-size: 1rem;
+            border-radius: 0.5rem; /* More rounded corners */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* Glassy border */
+            background-color: rgba(255, 255, 255, 0.2); /* More transparent input */
+            color: #ffffff; /* White text */
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Add transitions */
+            box-shadow: inset 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+        }
+
+        .input-group input:focus {
+            border-color: rgba(255, 255, 255, 0.8); /* Lighter border on focus */
+            box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2); /* Add shadow on focus */
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.25rem; /* Increased margin */
+        }
+
+        .checkbox-group input {
+            margin-right: 0.75rem; /* Increased margin */
+            width: 1.25rem; /* Increased size */
+            height: 1.25rem;
+        }
+
+        .checkbox-group label {
+            font-size: 0.875rem;
+            font-weight: 600; /* Use semibold font */
+            color: #ffffff; /* White text */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow */
+        }
+
+        .register-button {
+            width: 100%;
+            padding: 0.75rem; /* Increased padding */
+            font-size: 1.125rem; /* Larger font size */
+            font-weight: 600; /* Use semibold font */
+            border-radius: 0.5rem; /* More rounded corners */
+            background-color: #4f46e5; /* Use a solid color */
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Add box-shadow */
+            box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2); /* Add shadow */
+        }
+
+        .register-button:hover {
+            background-color: #4338ca; /* Darker shade on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 0.375rem 1rem rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+        }
+
+        .register-button:active {
+            transform: translateY(0);
+            box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.2); /* Smaller shadow on active */
+        }
+        .close-button {  /* Added close button */
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .close-button:hover {
+            opacity: 1;
+        }
+
+        .forgot-password {
+            font-size: 0.875rem;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+            margin-left: auto; /* Ensure "Forgot Password" is on the right */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .forgot-password:hover {
+            color: #d1d5db;
+        }
+
+
+        .login-button {
+            width: 100%;
+            padding: 0.75rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            border-radius: 0.5rem;
+            background-color: #4f46e5;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+        }
+
+        .login-button:hover {
+            background-color: #4338ca;
+            transform: translateY(-2px);
+            box-shadow: 0 0.375rem 1rem rgba(0, 0, 0, 0.3);
+        }
+
+        .login-button:active {
+            transform: translateY(0);
+            box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.2);
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 1.25rem;
+            font-size: 0.875rem;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .register-link a {
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .register-link a:hover {
+            color: #d1d5db;
+            text-decoration: underline;
+        }
+        .close-button {  /* Added close button */
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .close-button:hover {
+            opacity: 1;
+        }
